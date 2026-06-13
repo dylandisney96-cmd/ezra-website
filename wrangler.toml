@@ -1,4 +1,4 @@
-name = "ezra-mobility-forms"
+name = "ezra-website"
 main = "workers/form-handler.js"
 compatibility_date = "2024-01-01"
 

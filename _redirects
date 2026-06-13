@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+# API endpoints
+/api/submit/*    /api/submit    200
+
+# SPA fallback (not needed for static site, but keep for cleanliness)
+/*              /index.html     404

@@ -1,0 +1,8 @@
+name = "ezra-mobility-forms"
+main = "workers/form-handler.js"
+compatibility_date = "2024-01-01"
+
+[env.production]
+routes = [
+  { pattern = "www.ezramobilitygroup.com/api/submit", zone_id = "YOUR_ZONE_ID" }
+]

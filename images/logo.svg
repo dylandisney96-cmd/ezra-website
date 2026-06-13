@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <defs>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1493"/>
+      <stop offset="100%" stop-color="#ff69b4"/>
+    </linearGradient>
+  </defs>
+  <!-- Navigator Silhouette -->
+  <g transform="translate(0, 15)">
+    <!-- Body -->
+    <rect x="8" y="12" width="70" height="24" rx="6" fill="white" opacity="0.9"/>
+    <!-- Cabin -->
+    <rect x="18" y="4" width="22" height="14" rx="4" fill="white" opacity="0.9"/>
+    <rect x="46" y="4" width="22" height="14" rx="4" fill="white" opacity="0.9"/>
+    <!-- Windows -->
+    <rect x="20" y="6" width="8" height="10" rx="2" fill="#0a0a0a"/>
+    <rect x="31" y="6" width="8" height="10" rx="2" fill="#0a0a0a"/>
+    <rect x="48" y="6" width="8" height="10" rx="2" fill="#0a0a0a"/>
+    <rect x="59" y="6" width="8" height="10" rx="2" fill="#0a0a0a"/>
+    <!-- Grille -->
+    <rect x="4" y="14" width="6" height="18" rx="2" fill="#ff1493"/>
+    <!-- Wheels -->
+    <circle cx="25" cy="40" r="6" fill="#111" stroke="#ff1493" stroke-width="1"/>
+    <circle cx="61" cy="40" r="6" fill="#111" stroke="#ff1493" stroke-width="1"/>
+    <circle cx="25" cy="40" r="2.5" fill="#ff1493"/>
+    <circle cx="61" cy="40" r="2.5" fill="#ff1493"/>
+    <!-- Pink bumper guard -->
+    <rect x="6" y="35" width="74" height="2" rx="1" fill="#ff1493" opacity="0.6"/>
+  </g>
+  <!-- Text -->
+  <text x="92" y="38" font-family="Montserrat, sans-serif" font-size="28" font-weight="800" fill="white">EZRA</text>
+  <text x="92" y="60" font-family="Montserrat, sans-serif" font-size="14" font-weight="400" fill="#a0a0a0" letter-spacing="4">MOBILITY GROUP</text>
+  <!-- Pink dot -->
+  <circle cx="86" cy="38" r="3" fill="#ff1493"/>
+</svg>

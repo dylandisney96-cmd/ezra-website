@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Vehicle — Ezra Mobility Group</title>
+  <meta name="description" content="Reserve your black SUV rental in Austin. Choose from Suburban, Expedition, Navigator, or Escalade. Daily, weekly, or monthly rentals available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff1493'/%3E%3Ctext x='16' y='22' font-size='18' font-weight='bold' text-anchor='middle' fill='white' font-family='Montserrat'%3EE%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/images/logo.svg" alt="Ezra Mobility Group" style="height:42px">
+      </a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/fleet.html">Fleet</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/booking.html">Book</a>
+        <a href="/driver-application.html">Drive With Us</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/booking.html" class="nav-cta">Rent Now</a>
+      </nav>
+      <div class="mobile-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/fleet.html">Our Fleet</a>
+    <a href="/pricing.html">Pricing</a>
+    <a href="/booking.html">Book a Vehicle</a>
+    <a href="/driver-application.html">Driver Application</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/terms.html">Terms & Conditions</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/booking.html" class="nav-cta">Rent Now</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Book a Vehicle</h1>
+      <p>Submit a booking inquiry and our team will confirm availability within 24 hours. All rentals include commercial insurance, maintenance, and professional detailing.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(512) 555-0000">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vehicle">Desired Vehicle</label>
+            <select id="vehicle" name="vehicle" required>
+              <option value="">Select a vehicle</option>
+              <option value="suburban">Chevrolet Suburban</option>
+              <option value="expedition">Ford Expedition</option>
+              <option value="navigator">Lincoln Navigator</option>
+              <option value="escalade">Cadillac Escalade</option>
+              <option value="any">Any Available</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="plan">Rental Plan</label>
+            <select id="plan" name="plan" required>
+              <option value="">Select a plan</option>
+              <option value="daily">Daily — $189/day</option>
+              <option value="weekly">Weekly — $899/week</option>
+              <option value="monthly">Monthly — $2,899/month</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="startDate">Desired Start Date</label>
+            <input type="date" id="startDate" name="startDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Rental Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select duration</option>
+              <option value="1">1 day</option>
+              <option value="2">2 days</option>
+              <option value="3">3 days</option>
+              <option value="4">4 days</option>
+              <option value="5">5 days</option>
+              <option value="6">6 days</option>
+              <option value="7">1 week</option>
+              <option value="14">2 weeks</option>
+              <option value="21">3 weeks</option>
+              <option value="30">1 month</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="drivingPurpose">Purpose of Rental</label>
+          <select id="drivingPurpose" name="drivingPurpose" required>
+            <option value="">Select purpose</option>
+            <option value="uber-black">Uber Black</option>
+            <option value="lyft-black">Lyft Black</option>
+            <option value="both">Both Uber Black & Lyft Black</option>
+            <option value="private">Private Car Service</option>
+            <option value="corporate">Corporate/Event</option>
+            <option value="trial">Trial — Testing the Market</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Notes</label>
+          <textarea id="message" name="message" placeholder="Tell us about your driving experience, any specific requirements, or questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Submit Booking Inquiry</button>
+
+        <p style="color:var(--text-secondary);font-size:0.8rem;text-align:center;margin-top:16px;">
+          By submitting, you agree to our <a href="/terms.html">Terms & Conditions</a> and <a href="/privacy.html">Privacy Policy</a>.
+          A refundable security deposit will be required to confirm your reservation.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Need Help Choosing?</h2>
+        <div class="accent-line"></div>
+        <p>Not sure which vehicle or plan is right for you? We're here to help.</p>
+      </div>
+      <div style="text-align:center;">
+        <a href="tel:+15123488425" class="btn btn-secondary">Call Us: (512) 348-8425</a>
+        <a href="/contact.html" class="btn btn-secondary" style="margin-left:12px;">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="/" class="logo">
+        <img src="/images/logo.svg" alt="Ezra Mobility Group" style="height:42px">
+      </a>
+          <p>Premium black SUV rentals for gig economy drivers in Austin, Texas.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/fleet.html">Our Fleet</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/booking.html">Book a Vehicle</a></li>
+            <li><a href="/driver-application.html">Driver Application</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/terms.html">Terms & Conditions</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@ezramobilitygroup.com">info@ezramobilitygroup.com</a></li>
+            <li><a href="tel:+15123488425">(512) 348-8425</a></li>
+            <li>Austin, Texas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ezra Mobility Group LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <span style="color:var(--text-secondary);font-size:0.8rem;">Social media coming soon</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/booking.js"></script>
+</body>
+</html>

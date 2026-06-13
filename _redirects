@@ -1,0 +1,2 @@
+# API endpoint for form submissions
+/api/submit/*  /api/submit  200
